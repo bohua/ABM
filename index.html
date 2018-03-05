@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+ <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ABM Portal On the Go</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="icon" href="favicon.ico" type="images/x-icon" />
+  <link rel="apple-touch-icon" href="Icon@2x.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="Icon-76@3x.png">
+  <link rel="apple-touch-icon" sizes="50x50" href="Icon-Small@3x.png">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="login-outer-wrap">
+    <header class="adm-login-header">
+      <div class="container-fluid">
+        <div class="logoHolder">
+          <h1>
+            <a href="#" class="toplogo">
+              <img src="images/logo2x.png" alt="ABM Executive" />
+            </a>
+          </h1>
+        </div>
+      </div>     
+    </header>
+    <section class="login-content">
+      <div class="hero-image">
+        <div class="container-fluid">
+          <div class="abm-title">
+            <div class="abm-icon">
+              <img src="images/login-banner-icon2x.png" alt="ABM Executive Dashboard">
+            </div>
+            <p>
+              ABM PORTAL ON THE GO
+            </p>
+          </div>
+          <div class="form-wrapper">
+            <p class="desktop-only">PLEASE LOGIN TO CONTINUE</p>
+            <form autocomplete="off" action="javascript:login();" method="post">
+              <div class="form-group name">
+                <span>
+                  <input type="text" id="id" name="id" placeholder="Username" autocomplete="off" autofocus>
+                </span>
+              </div>
+              <div class="form-group pwd">
+                <span>
+                  <input type="password" id="password" name="password" placeholder="Password" autocomplete="off">
+                </span>
+              </div>              
+              <div class="agreement-container">                           
+                <div class="div-left">
+                  <input type="checkbox" class="agreementcheckbox" value="checked" id="squaredThree" name="check" checked="checked" onclick="handleClick(this);" />  
+                </div>
+                <div class="div-right">
+                  <label class="agreementtext" for="squaredThree">I understand and agree to the <a href="./ABMPortalOntheGoDisclaimer.pdf" class="agreementtext">Terms and Conditions</a></label>
+                </div>
+              </div>
+              <div class="login">
+                <input type="submit" id="btnlogin" name="login" value="Login"><i id='processing' class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size: 20px; margin-top: 10px; display: none"></i>
+              </div>
+              <label class="warningmessage">Please agree to the Terms and Conditions by clicking the checkbox</label>
+              <!-- Squared THREE -->
+              
+            </form>            
+          </div>
+          <div class="errorMessage" id="errorMessage"></div>
+        </div>        
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="host">
+        <div class="img-wrap">
+          <img src="images/footer-icon2x.png" alt="ABM">
+        </div>
+        <div class="text">
+          <p>ABM PORTAL ON THE GO</p>
+        </div>
+      </div>
+      <div class="bottom-content">
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

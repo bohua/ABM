@@ -1,0 +1,37 @@
+﻿<div class="view-header">
+
+    <button id="first-btn" type="button" class="button selected toggle-btn"></button>
+    <button id="second-btn" type="button" class="button toggle-btn" style="margin-left: -5px; margin-right: 20px;"></button>
+    <button id="resetbtn" type="button" class="button">
+        <span class="fa fa-arrow-left"></span>
+    </button>
+    <button id="clearbtn" type="button" class="button ">
+        <span class="fa fa-refresh"></span>
+    </button>
+</div>
+<div class="view-body body multi-chart-view">
+    <ul class="chart-list" style="list-style: none;height: 100%;">
+        <li id="first-page">
+            <div id="first-chart" class="chart qvobject">
+                <div class="loading" style="text-align: center">
+                    <i id='processing-1' class="fa fa-spinner fa-spin fa-3x fa-fw"
+                       style="font-size: 50px;color: wheat;">
+
+                    </i>
+                </div>
+            </div>
+        </li>
+        <li id="second-page" style='display: none;padding-top: 0;'>
+            <div id="second-chart" class="chart qvobject">
+                <div class="loading" style="text-align: center">
+                    <i id='processing-2' class="fa fa-spinner fa-spin fa-3x fa-fw"
+                       style="font-size: 50px;color: wheat;">
+                    </i>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="orientation-message">
+        <span class="fa fa-info-circle"></span> view in landscape for best performance
+    </div>
+</div>

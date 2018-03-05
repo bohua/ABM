@@ -1,0 +1,696 @@
+﻿.holder {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden
+}
+
+header.adm-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #2c2e37;
+    padding: 25px 0
+}
+
+header.adm-header .logoHolder {
+    width: 60px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 49px;
+    margin-top: 11px;
+    margin-left: 10px
+}
+
+header.adm-header .logoHolder h1 {
+    font-size: 0;
+    line-height: 0;
+    width: 57px
+}
+
+header.adm-header .logoHolder img {
+    width: 100%
+}
+
+.setting {
+    width: auto;
+    float: right;
+    position: relative;
+    margin-top: 13px;
+}
+
+.setting .setting-icon.active {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s
+}
+
+.setting .setting-icon {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s
+}
+
+.setting .setting-icon i {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0 0 -10px
+}
+
+.setting .setting-list {
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background: #2c2e37;
+    width: 200px;
+    display: none;
+    z-index: 3;
+}
+
+.noscroll {
+    position: fixed;
+    overflow: hidden;
+}
+
+.setting-list.settingScroll {
+    overflow-y: scroll
+}
+
+.setting .setting-list .setting-list-label a {
+    height: 39px;
+    width: 100%;
+    line-height: 39px;
+    color: #fff;
+    background: #42434b;
+    padding: 0 17px;
+    display: block;
+    font-size: 14px;
+    position: relative
+}
+
+.setting .setting-list .setting-list-label a:hover {
+    color: #fff
+}
+
+.settings-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.panel-heading {
+    padding: 0;
+    border-bottom: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0
+}
+
+.setting .setting-list .setting-list-label a i.down-arrow:after {
+    content: "\f078";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    position: absolute;
+    right: 17px;
+    top: 43%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: translateY(-43%);
+    -ms-transform: translateY(-43%);
+    -o-transform: translateY(-43%);
+    transform: translateY(-43%)
+}
+
+.setting .setting-list .setting-list-label a i.up-arrow:after {
+    content: "\f078";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    position: absolute;
+    right: 17px;
+    top: 43%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: translateY(-43%) rotate(-180deg);
+    -ms-transform: translateY(-43%) rotate(-180deg);
+    -o-transform: translateY(-43%) rotate(-180deg);
+    transform: translateY(-43%) rotate(-180deg)
+}
+
+.setting .setting-list ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0
+}
+
+.setting .setting-list ul li {
+    padding: 0 10px 0 40px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    position: relative
+}
+
+.setting .setting-list ul li.active,
+.setting .setting-list ul li:hover {
+    background: #42434b
+}
+
+.setting .setting-list ul li i {
+    position: absolute;
+    left: 19px;
+    top: 2px;
+    font-size: 14px;
+    padding: 14px 0
+}
+
+.setting .setting-list ul li i.fa-check-circle {
+    font-size: 14px
+}
+
+.setting .setting-list ul li a {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 0;
+    display: inline-block
+}
+
+.setting .setting-list ul li a:hover {
+    color: #fff
+}
+
+.panel-default {
+    border-color: transparent
+}
+
+.panel {
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.banner-block {
+    margin-top: 100px;
+    background-color: #2c2e37
+}
+
+.banner-block .background-banner {
+    padding-top: 27%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    overflow: hidden;
+    min-height: 515px
+}
+
+.banner-block .banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translateY(-50%, -50%);
+    -o-transform: translateY(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1140px
+}
+
+.banner-caption .banner-icon > img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-caption h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 60px;
+}
+
+.banner-caption h1 > span {
+    display: block;
+    font-size: 35px;
+    line-height: 50px
+}
+
+.banner-caption .banner-icon {
+    max-width: 60px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.banner-overlay {
+    background-color: rgba(44, 46, 55, .55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.cost-block {
+    display: none;
+    background-color: #2c2e37;
+    padding: 49px 0 46px
+}
+
+.cost-block .holder {
+    max-width: 1360px;
+    width: 100%
+}
+
+.cost-block .single-cost {
+    display: block;
+    text-align: center;
+    padding: 51px 10px 47px;
+    vertical-align: top;
+    width: 100%;
+    cursor: pointer
+}
+
+.cost-block .dark-shade {
+    color: #2c2e37
+}
+
+.cost-block .light-shade {
+    color: #fff
+}
+
+.cost-block .single-cost .icon-wrap {
+    display: inline-block;
+    margin-bottom: 13px
+}
+
+.cost-block .single-cost .icon-wrap .fa {
+    font-size: 40px;
+    line-height: 50px
+}
+
+.cost-block .single-cost .icon-wrap > img {
+    width: 35px;
+    height: auto;
+}
+
+.cost-block .single-cost .icon-wrap > img.ungrouped {
+    width: 45px;
+}
+
+.cost-block .single-cost .percent p {
+    font-size: 47px;
+    margin-bottom: 10px;
+    font-weight: 700
+}
+
+.cost-block .single-cost .percent p > span {
+    font-size: 20px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding-right: 10px
+}
+
+.cost-block .single-cost .details,
+.cost-block .single-cost .year {
+    font-size: 25px;
+    line-height: 30px
+}
+
+.color-blocks .item.first-color .single-cost {
+    background-color: #1abc9c;
+    color: black;
+}
+
+.color-blocks .item.second-color .single-cost {
+    background-color: #06c;
+    color: white;
+}
+
+.color-blocks .item.third-color .single-cost {
+    background-color: #913292;
+    color: white;
+}
+
+.color-blocks .item.fourth-color .single-cost {
+    background-color: #fdb84b;
+    color: black;
+}
+
+.cost-block .cost-block-wrap {
+    position: relative;
+    overflow: visible
+}
+
+.tooltip {
+    padding: 5px
+}
+
+.mapWrap {
+    width: 50%;
+    float: left
+}
+
+.mapWrap h3 {
+    margin-bottom: 50px
+}
+
+.mapWrap button {
+    background: #2c2e37;
+    border: 0;
+    padding: 10px;
+    float: right;
+    clear: both;
+    margin-bottom: 2px;
+    -webkit-transform: translate(-45px, -126px);
+    -moz-transform: translate(-45px, -126px);
+    -ms-transform: translate(-45px, -126px);
+    -o-transform: translate(-45px, -126px);
+    transform: translate(-45px, -126px);
+    color: #fff;
+    font-size: 24px
+}
+
+.mapWrap button.zoomIn {
+    border-radius: 5px 5px 0 0
+}
+
+.mapWrap button.zoomOut {
+    border-radius: 0 0 5px 5px
+}
+
+.mapWrap button:focus {
+    outline: 0
+}
+
+.colortile-loading {
+    background-repeat: no-repeat
+}
+
+tr.highlighted-text {
+    background-color: #ccc
+}
+
+tr.highlighted-text td {
+    font-weight: 800
+}
+
+td.variation3 {
+    color: #d7435f
+}
+
+td.variation2 {
+    color: #fcc540
+}
+
+td.variation1 {
+    color: #39bb70
+}
+
+.host {
+    margin-bottom: 20px
+}
+
+.host .img-wrap {
+    max-width: 30px;
+    margin-right: 6px;
+    margin-top: 4px
+}
+
+.host div {
+    display: inline-block;
+    vertical-align: top
+}
+
+.host .img-wrap > img {
+    width: 100%;
+    height: auto
+}
+
+.host .text p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-top: 4px
+}
+
+footer .bottom-content p {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #fff
+}
+
+.visibility-hidden {
+    height: 0;
+    overflow: hidden;
+    margin: 0
+}
+
+.hidden-colortiles {
+    display: none
+}
+
+.colortile-loading {
+    background-image: url(../images/loader.gif);
+    background-position: 50% 50%
+}
+
+.benchswipe {
+    display: none !important;
+}
+
+.benchmark-refresh {
+    position: inherit !important;
+
+}
+
+.wau-refresh {
+    position: inherit !important;
+}
+
+.container-fluid {
+    padding: 0 20px
+}
+
+header.adm-header .logoHolder h1 {
+    width: 68px
+}
+
+header.adm-header {
+    padding: 8px 0;
+}
+
+header.adm-header .logoHolder {
+    margin-left: 0;
+    margin-top: -6px;
+}
+
+header .logo > h1 > a {
+    width: 58px
+}
+
+.setting .setting-icon {
+    height: 31px;
+    width: 31px
+}
+
+.setting .setting-list {
+    top: 49px;
+    right: -20px
+}
+
+.banner-block {
+    margin-top: 70px
+}
+
+.banner-block .background-banner {
+    min-height: 180px
+}
+
+.banner-block .banner-caption {
+    padding: 0 20px;
+    text-align: center
+}
+
+.banner-caption .banner-icon {
+    width: 30px;
+    display: inline-block
+}
+
+.banner-caption h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    display: block;
+}
+
+.banner-caption h1 > span {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-top: 5px
+}
+
+.color-blocks {
+    text-align: center;
+}
+
+.cost-block {
+    padding: 10px 0
+}
+
+.cost-block .single-cost-wrap {
+    width: 588px
+}
+
+.cost-block .single-cost .percent p {
+    font-size: 23px
+}
+
+.cost-block .single-cost .percent p > span {
+    font-size: 18px
+}
+
+.cost-block .single-cost .details p,
+.cost-block .single-cost .year p {
+    font-size: 13px;
+    line-height: 15px
+}
+
+.cost-block .single-cost {
+    padding: 15px 0 11px;
+    margin: 0 7px 0 0;
+    height: 200px;
+}
+
+.cost-block .cost-block-wrap {
+    width: 100%;
+}
+
+.cost-block .cost-block-wrap .item {
+    margin: 5px 3px;
+    display: none;
+    vertical-align: top;
+    padding: 2px;
+    max-width: 180px;
+}
+
+.cost-block .cost-block-wrap .item.visible {
+    display: inline-block;
+}
+
+.cost-block .container-fluid {
+    padding: 0
+}
+
+footer {
+    padding: 15px 15px 10px
+}
+
+.host .text p {
+    font-size: 12px
+}
+
+footer .bottom-content p {
+    font-size: 10px
+}
+
+.host .img-wrap {
+    margin-top: 0
+}
+
+.gotoTop {
+    bottom: 10px;
+    right: 10px;
+}
+
+.visibility-hidden {
+    margin: 0
+}
+
+.errorMessage {
+    margin-top: 10px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* new tiles table styling*/
+table#tiles-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+table#tiles-container .item {
+    width: 98%;
+}
+
+@media only screen and (orientation: portrait) {
+    #tiles-container td {
+        width: 50%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #tiles-container td {
+        width: 33%;
+    }
+}
+
+.paddingTitle {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/*@media only screen and (orientation: landscape) {
+  div.abmpriority {
+    height: 340px;
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71) and (orientation: landscape) {
+  div.abmpriority {
+    height: 340px;
+  }
+}*/

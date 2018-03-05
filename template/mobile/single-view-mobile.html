@@ -1,0 +1,29 @@
+﻿<div class="view-header purple">
+    <div id="benchmark-filter" class="resetbtn reset-drill btn-group" style="display: none">
+        <button type="button" class="dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            <val class="benchmark-current-year"></val>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <!--li><a href="#">Action</a></li-->
+        </ul>
+    </div>
+    <button id="resetbtn" type="button" class="button ">
+        <span class="fa fa-arrow-left"></span>
+    </button>
+    <button id="clearbtn" type="button" class="button ">
+        <span class="fa fa-refresh"></span>
+    </button>
+</div>
+<div class="view-body body single-chart-view">
+    <div id="first-chart" class="chart qvobject">
+        <div class="loading" style="text-align: center">
+            <i id='processing-chart' class="fa fa-spinner fa-spin fa-3x fa-fw"
+               style="font-size: 50px;color: wheat;"></i>
+        </div>
+    </div>
+    <div class="orientation-message">
+        <span class="fa fa-info-circle"></span> view in landscape for best performance
+    </div>
+</div>

@@ -1,0 +1,401 @@
+.view-header {
+  background-color: white;
+}
+.map {  
+  position: absolute;
+  top: 0px;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+}
+
+.map .legend-container, .map .map-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.map .legend-container {
+  width: 25%;  
+}
+
+.map .map-container {
+  width: 73%;
+  padding-left: 10px;
+  float: right;
+}
+
+.map div.nsw-map-title {
+  padding-top: 4px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+} 
+
+.legend-container h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.legend-container a {
+  background-color: white; 
+  display: block;
+  margin-top: 10px;
+  margin-left: 8px;
+  width: 85%;
+  font-size: 9px;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.legend-container a img {
+  width: 20px;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.legend-container a span {
+  display: inline-block;
+}
+
+.mapsydftrbtn, .mapnswftrbtn {
+  margin-right: 10px;
+  margin-top: -12px;
+  width: 45px;
+  height: 45px;
+  color: black;
+  background-color: white;
+  font-weight: lighter;
+  font-size: 14px;
+  float: right;
+}
+
+.sydney-legend {
+  position: fixed;
+  top: 130px;
+  right: 10px;
+  z-index: 2;
+}
+
+.budget-legend {
+  position: absolute;
+  top: 80px;
+  right: 25px;
+  z-index: 2;
+}
+
+.sydney-legend ul {
+  list-style: none;
+}
+
+.map-nav-button {
+  position: absolute;
+  bottom: 5px;
+  right:-5px;
+}
+
+/* new labels */
+.map-label {
+  position: relative;
+}
+
+.shn {
+
+  padding-right: 30px;
+}
+
+.nsw-map .map-label-name {
+  position: absolute;
+  top: 23px;
+  left: 7px;
+  font-weight: normal;
+  font-size: 10px;
+  color: #333
+}
+
+.sydney-map .map-label-name {
+  position: absolute;
+  top: -20px;
+  left: 27px;
+  font-weight: normal;
+  font-size: 10px;
+  color: #333
+}
+
+.map-label-name-specialnetwork{
+  left: 25px;
+} 
+
+.map-label-img {
+  width: 25px;
+}
+
+.sydney-legend .map-label-name { 
+  top: 6px;
+}
+
+.map-hover {
+  position: absolute;
+  width: 120px;
+  height:45px;
+  text-align: center;
+  background-color: #34474f;
+  color: #ffffff;
+  cursor: default;
+  font-size: 12px;
+  padding-top: 8px;
+  font-weight: 100;
+}
+
+.schnshover {
+  bottom: -32px;
+  right: 73px;
+}
+
+.svhnshover {
+  bottom: -31px;
+  right: 88px;
+}
+
+@media only screen and (orientation: landscape) {
+  .map {
+    bottom: auto;
+    background-color: rgb(229, 229, 229);
+  }
+
+  div.legend-text {
+    width: 168px;
+  }
+
+  div.legend-text span.portrait {
+    display: none;
+  }
+
+  div.legend-text span.portrait-7plus {
+    display: none;
+  }
+
+  div.legend-text span.portrait-noniphone {
+    display: none  
+  }
+  
+  div.legend-text span.landscape {
+    display: inline-block;
+  }
+
+  .maptext {
+    display: none;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .view-header {
+    z-index: 3;
+  }
+  .chart-list {    
+    /*padding-top:10px;*/
+  }
+  
+  /*seperate two li (sydney and NSW)*/
+  .chart-list > li:nth-child(2) {
+    padding-top: 20px;
+    background-color: white;
+  }
+
+  div.legend-head {
+    display: none;
+    width: 390%;  
+  } 
+
+  .sydney-legend {
+    top: 175px;
+    right: 5px;
+    z-index: 2;
+    width: 112px;
+  }
+  
+  .budget-legend {
+    position: absolute;
+    top: 170px;
+    right: 10px;
+    z-index: 2;
+  }
+
+  .sydney-legend p {
+    margin-left: 35px;  
+  }
+
+  .map {
+    bottom: initial;
+  }
+
+    .map .map-container {
+      width: 100%;           
+    }
+
+  .map-nav-button {
+    bottom: 20px;
+  }
+
+  .sydney-map {
+    height: 500px;
+  }
+  
+  .sydney-map, .nsw-map {
+    background-color: rgb(229, 229, 229); 
+  }
+  
+  .nsw-map .map-container {
+    /*height: 380px*/
+    margin-top: -40px;
+  }
+
+  .sydney-map .map-container {
+    margin-left: -30px;    
+    /*height:380px*/
+  }
+
+  .legend-container {
+    text-align: center;
+    height: 50px;
+  }
+
+  .legend-container a {
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  div.legend-text span.portrait-7plus {
+    display: none;
+  }
+
+  div.legend-text span.portrait-noniphone {
+    display: inline-block;
+  }
+
+  li#mapnsw{
+    height:440px;
+  }
+
+  div.legend-text span.portrait {
+    display: inline-block;
+  }
+
+  div.legend-text span.landscape {
+    display: none;
+  }
+
+  div#legend2 {
+      display: -webkit-inline-box;
+      position: relative;
+      z-index: 2;
+      width: 390%;
+      bottom:24px
+    }
+
+  div#legend3 {
+    display: -webkit-inline-box;
+    position: relative;
+    bottom: 36px;
+    z-index: 2;
+    width: 390%;
+  }
+
+  .maptext {
+    width: 400%;
+    font-size: 10px;
+    margin-top: -20px;
+  }
+  /*div#legend2, div#legend3 {
+    display: -webkit-inline-box;
+    position: relative;
+    top: 360px;
+    z-index: 2;
+    width: 390%;
+  }*/
+
+  div.legend-text {
+    width: 33%;    
+  }
+
+  div.legend-text a img{
+    margin: auto;
+    display: block;
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71) and (orientation: landscape) {
+  div.legend-text {
+    width: 130px;
+  }
+}
+
+  @media screen and (device-aspect-ratio: 40/71) and (orientation: portrait) {
+    .chart {
+      height: 400px;
+    }
+
+    .chart-list li {
+      height: auto;
+      /*background-color: white;*/
+    }
+
+    .nsw-map {
+      height: 440px;
+    }
+
+    div#legend3 {
+      bottom: 10px;
+    }
+   
+    div.legend-text span.portrait-7plus {
+      display: none;
+    }
+
+    div.legend-text span.portrait-noniphone {
+      display: inline-block;
+    }
+
+    .maptext {     
+      margin-top: 10px;
+    }
+  }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: portrait) {
+  div.legend-text span.portrait-7plus {
+    display: inline-block
+  }
+
+  div.legend-text span.portrait-noniphone {
+    display: none;
+  }
+
+  li#mapnsw {
+    height: 470px;
+  }
+
+  div.sydney-map {
+    height: 545px;
+  }
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation: portrait) {
+   
+  div.legend-text span.portrait-7plus {
+    display: inline-block
+  }
+
+    div.legend-text span.portrait-noniphone {
+      display: none;
+    }
+
+  li#mapnsw {
+    height: 470px;
+  }
+
+  div.sydney-map{
+    height:555px;
+  }  
+}

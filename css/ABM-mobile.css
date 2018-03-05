@@ -1,0 +1,230 @@
+.qvplaceholder, .qvobject {
+    flex: 1 1 auto;
+    height: 200px;
+    min-width: 200px;
+    padding: 10px 15px 0 15px;
+    min-height: 100px;
+    background: white;
+    border-top: 1px solid #d9d9d9;
+}
+
+.qvobject .qv-object-wrapper,
+.qvobject .qv-object-wrapper .qv-object,
+.qvobject .qv-object-wrapper .qv-object .qv-inner-object,
+.qvobject .qv-object-wrapper .qv-object .qv-inner-object .qv-object-content-container,
+.qvobject .qv-object-wrapper .qv-object .qv-inner-object .qv-object-content-container .qv-object-content,
+.qvobject .qv-object-wrapper .qv-object .qv-inner-object .qv-object-content-container .qv-object-content .qv-viz {
+    height: 100%;
+}
+
+.qvobject .sel-toolbar-list-wrapper td,
+.qv-chart-tooltip-inner td {
+    border-right: none;
+    border-bottom: none;
+}
+
+#popup {
+    background-color: #c3534b;
+    color: #FFFFFF;
+    position: fixed;
+    max-width: 250px;
+    padding: 10px;
+    margin: 10px;
+    top: 0;
+    left: calc(50% - 84px);
+    display: none;
+    border-radius: 5px;
+    z-index: 6;
+    font-family: sans-serif;
+}
+
+.close {
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    position: absolute;
+    right: 9px;
+    top: 7px;
+}
+
+.close:hover {
+    opacity: .5;
+}
+
+#popupText {
+    margin-right: 23px;
+}
+
+.qs-title,
+.qs-subtitle {
+    font-size: 15px;
+}
+
+#sub-viewport {
+    opacity: 0;
+    position: fixed;
+    left: -200vh;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100vh;
+}
+
+#sub-viewport .body {
+    background-color: #e8e8e8;
+}
+
+#sub-viewport .qs-mobile-table {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#sub-viewport .qs-mobile-table .qv-object-header{
+    border-bottom: none;
+}
+
+#sub-viewport .qs-mobile-table .scroll-affordance.horizontal,
+#sub-viewport .qs-mobile-table .scroll-affordance.horizontal {
+    display: none;
+}
+
+#sub-viewport .view-header {
+    visibility: visible;
+    background: black;
+}
+
+#sub-viewport #clearbtn {
+    float: right;
+    background: black;
+    color: white;
+    border: 1px solid #e8e8e8;
+    width: 50px;
+    display: none;
+    margin-right: 5px;
+}
+
+#sub-viewport .view-body {
+    margin-top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+#sub-viewport .view-body.multi-chart-view ul {
+    background: white;
+}
+
+#sub-viewport #benchmark-filter {
+    visibility: visible;
+}
+
+#sub-viewport #benchmark-filter > button {
+    height: 35px;
+    width: auto;
+    padding: 0 10px 0 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: white;
+    background: black;
+    border: 1px solid #e8e8e8;
+}
+
+#sub-viewport #benchmark-filter > button > val {
+    margin-right: 5px;
+}
+
+#sub-viewport .qvobject .qv-object-header {
+    position: absolute;
+    top: -62px;
+}
+
+@media only screen and (orientation: portrait) {
+    #sub-viewport .view-body:not(.map-view) {
+        height: calc(100% - 105px);
+        padding: 45px 0 0 0;
+    }
+
+    #sub-viewport .view-body.map-view {
+        height: calc(100% - 60px);
+        width: 100%;
+    }
+
+    #sub-viewport .long-title{
+        padding-top: 60px;
+    }
+
+    #sub-viewport .long-title .qv-object-header{
+        top: -80px;
+    }
+
+    #sub-viewport .long-title .qv-object-header .qv-object-title-text{
+        white-space: normal;
+    }
+
+    #sub-viewport .map-view .chart-list{
+        height: calc(100% - 60px);
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #sub-viewport .view-body:not(.map-view) {
+        height: 100%;
+        padding: 45px 0 0 0 !important;
+    }
+
+    #sub-viewport .view-body.map-view {
+        height: 100%;
+        width: 100%;
+    }
+
+    #sub-viewport .view-header:not(.map-view){
+        height: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    #sub-viewport .view-header.map-view{
+        height: 45px;
+        padding: 0;
+    }
+
+    #sub-viewport .view-body{
+        top: -40px;
+    }
+
+    #sub-viewport .long-title{
+        padding-top: 45px;
+    }
+
+    #sub-viewport .map-view .chart-list{
+        height: calc(100% - 45px);
+    }
+}
+
+.info-icon {
+    color: white;
+    font-size: 15px;
+    float: right;
+    margin: 10px;
+}
+
+.qv-object-header > h1 {
+    margin-bottom: 0;
+    margin-top: 15px;
+    color: #333;
+}
+
+.qv-object-header > h2 {
+    margin-bottom: 0;
+    margin-top: 2px;
+    color: #555;
+}
+

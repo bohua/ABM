@@ -1,0 +1,258 @@
+body {
+    background-color: #2c2e37;
+}
+
+.map-hover {
+    position: absolute;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    background-color: #34474f;
+    color: #ffffff;
+    cursor: default;
+    font-size: 12px;
+    padding-top: 8px;
+    font-weight: 100;
+
+}
+
+#content-panel {
+    background-color: #fff;
+}
+
+.table-refresh {
+    background-color: #E0E0E0;
+    margin-top: 10px;
+    min-height: 20px;
+    width: 222px;
+    padding: 5px 15px;
+
+}
+
+.map-refresh {
+    position: relative;
+    background-color: #E0E0E0;
+    margin-top: 10px;
+    min-height: 20px;
+    width: 250px;
+    padding: 5px 15px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.incEx {
+    background: white;
+    color: #98029D;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    font-weight: normal;
+}
+
+.incIn {
+    background: white;
+    color: #98029D;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    font-weight: normal;
+}
+
+.incPres {
+    background: #98029D !important;
+    color: white !important;
+    box-shadow: 1px 2px 1px #D3D3D3 !important;
+}
+
+.btn {
+    box-shadow: 1px 2px 1px #D3D3D3;
+}
+
+.btn:focus {
+
+    box-shadow: 1px 2px 1px #D3D3D3;
+}
+
+.wauPressed {
+    padding: 10px 20px;
+    background-color: #0066CC !important;
+    color: white !important;
+    font-weight: 600;
+    box-shadow: 1px 2px 1px #D3D3D3 !important;
+}
+
+.wauinc {
+    background: white;
+    color: #0066CC;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    font-weight: normal;
+
+}
+
+.wauexc {
+    background: white;
+    color: #0066CC;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    font-weight: normal;
+}
+
+.benchmark-refresh {
+
+}
+
+.wau-refresh {
+
+}
+
+.snap-refresh {
+    position: relative;
+}
+
+#rq-refresh {
+    position: relative;
+}
+
+#chart-5 {
+    max-width: 75%;
+    margin-left: 12%;
+}
+
+#chart-6 {
+    height: 520px;
+}
+
+#wau-head {
+    max-width: 105px;
+}
+
+#lhdhight {
+    color: white;
+    text-align: center;
+    width: 106px;
+}
+
+#totalnwau {
+    background-color: #034f9b;
+    color: white;
+}
+
+#totalnwaucost {
+    background-color: #034f9b;
+    color: white;
+}
+
+#encounter {
+    background-color: #1f71a5;
+    color: white;
+}
+
+#pernwau {
+    background-color: #1f71a5;
+    color: white;
+}
+
+#lhdexc {
+    background-color: #034f9b;
+    color: white;
+
+}
+
+#chart-5 td {
+    height: 55px;
+    width: 200px;
+}
+
+#chart-6 td {
+}
+
+.waulhd {
+    cursor: pointer;
+    padding-left: -10px;
+    font-weight: 700 !important;
+}
+
+.waulhd:hover {
+    text-decoration: underline;
+}
+
+.nswcolor {
+    background-color: #36484F;
+    pointer-events: none;
+    color: white !important;
+}
+
+.nswcolor2 {
+    background-color: #363F44;
+    color: white !important;
+}
+
+.abf-target-bottom-legend {
+    display: none;
+}
+
+.waubtn {
+    background-color: black;
+    position: absolute;
+    width: 100px;
+}
+
+#lhdexc1 {
+    background-color: #034f9b;
+    color: white;
+}
+
+#lhdexc {
+    cursor: pointer;
+}
+
+.hideswipe {
+    display: none;
+    color: #ccc;
+}
+
+text {
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .table-wrapper {
+        width: inherit;
+    }
+}
+
+#chart-5 td {
+    font-size: 13px;
+}
+
+#chart-6 td {
+    font-size: 13px;
+}
+
+.wau-light {
+    font-weight: 500 !important;
+}
+
+.highlighted-wau {
+    background-color: #ccc;
+}
+
+.budget-performance-table-2 {
+    white-space: nowrap;
+}
+
+#legend-pic {
+    max-width: 28%;
+    margin-left: 40%;
+    display: inline;
+    max-height: 29px;
+}
+
+.wau-legend {
+    overflow: visible;
+    margin-bottom: 30px;
+}
+
+.panel-collapse a {
+    width: 100%;
+}

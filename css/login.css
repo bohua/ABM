@@ -1,0 +1,225 @@
+.login-body {
+  position: relative;
+  background-image: url(../images/login_heroimage.jpg);
+  background-size: cover;
+  background-position: 50% 100px;
+  background-color: #2c2e37;
+}
+
+.login-body .login-content {
+  text-align: center
+}
+
+.login-body, .login-body .hero-image {
+  background-repeat: no-repeat;
+}
+
+.login-body header.adm-login-header {
+  background-color: #2c2e37
+}
+
+.login-body header.adm-login-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 36px 0 38px
+}
+
+.login-body header.adm-login-header .logoHolder h1 {
+    font-size: 0;
+    line-height: 0;
+    width: 57px
+}
+
+.login-body .login-content {
+    padding-top: 100px
+}
+
+.login-body .hero-image {
+    background-size: cover;
+    width: 100%;
+    display: block;
+    padding-top: 120px;
+    padding-bottom: 124px
+}
+
+.login-body .hero-image .abm-title {
+    margin-bottom: 74px
+}
+
+.login-body .hero-image .abm-title .abm-icon {
+    max-width: 40px;
+    display: inline-block;
+    margin-bottom: 8px
+}
+
+.login-body .hero-image .abm-title .abm-icon img {
+    width: 100%;
+    height: auto
+}
+
+.login-body .hero-image .abm-title p {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff
+}
+
+
+/*for iPhone checkbox*/
+/*input[type="checkbox"] {
+  border-radius: 2px;
+  border: 1px;
+  font-size: 12px;
+}*/
+/*input[type="checkbox"]
+{
+  background-position-x: left;
+}*/
+
+
+
+/* Might want to wrap a span around your checkbox text */
+.checkboxtext {
+  /* Checkbox text */
+  font-size: 110%;
+  display: inline;
+}
+
+.agreement-container {
+  margin: 0;
+}
+.div-left{
+  float:left;
+  width:10%;
+  overflow:hidden;
+}
+.div-right{
+  float:left;
+  width:90%;
+  padding-top: 3px;
+  overflow:hidden;
+  text-align: left;
+} 
+
+.warningmessage {
+  font-size: 10px;
+  display: none;
+  color: coral;
+}
+
+.login-body .form-wrapper form .login {
+  padding-top: 10px;
+  width: 160px;
+  position: relative;
+  float: right;
+}
+
+.login #processing {
+  position: absolute;
+  top: 10px;  
+}
+
+.errorMessage {
+  clear: both;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+  .login-body .hero-image {
+    padding-top: 115px
+  }
+
+  .login-body .hero-image .abm-title {
+    margin-bottom: 50px
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 760px) {
+  .login-body .desktop-only {
+    display:none;
+  }
+
+  .login-body header.adm-login-header {
+    padding: 23px 0;
+  }
+
+  .login-body {
+    background-position: 50% 72px
+  }
+
+  .login-body .login-content {
+    padding-top: 72px
+  }
+  
+  .login-body .hero-image {    
+    padding-top: 10%;
+    padding-bottom: 40px;
+  }
+  
+  .login-body .hero-image .abm-title {
+    margin-bottom: 10%
+  }
+  .login-body .form-wrapper div.login {
+    width: 100%;
+    margin: 6% auto;
+  }
+
+  .login-body .form-wrapper div.login > input {
+    width: 180px;
+    border-radius: 2px;
+  }
+
+  .login-body footer {
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .login-body .host {
+    margin-bottom: 6px;
+  }
+
+  .login #processing {
+    right: 10%;
+  }
+
+  footer {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 760px) and (orientation: landscape) {
+  .login-body .hero-image {
+    padding-top: 5%;
+    padding-bottom: 75px;
+  }
+
+  .login #processing {
+    right: 20%;
+  }
+
+  .login-body .hero-image .abm-title {
+    margin-bottom: 3%;
+  }
+
+  .form-wrapper form input {
+    padding: 10px 20px 15px 51px;
+  }
+
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+  .login-body .form-wrapper div.login {
+    margin: 3% auto;
+  }
+  
+  .form-wrapper form input[type=submit] {
+    padding-top: 15px;
+  }
+}

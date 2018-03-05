@@ -1,0 +1,471 @@
+/* layout */
+html, body {
+  background-color: #2c2e37;
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: Arial;
+}
+
+body.whitebg {
+  background-color: #ffffff;
+}
+
+.view-header {
+  position: relative;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 2;
+  padding: 4px 6px;
+  /*visibility: hidden;*/
+}
+
+.view-header .chart-list-controls {
+  position: absolute;
+  /*top: 77%;
+  left:17%*/
+  top: 120%;
+  left: 50%;
+  margin-left: -80px;
+  margin-top: -16px
+}
+
+.view-header .chart-list-controls-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -80px;
+  margin-top: -20px;
+}
+
+div.body {
+  position: relative;
+  padding-top: 7px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*height: 100%;*/
+  width: 100%;
+}
+
+.offset-body div.body {
+  top: 53px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:40px;
+  text-align: right;
+}
+
+/* buttons */
+.button {
+  height: 35px;
+  width: 35px;
+  color: white;
+  font-size: 21px;
+  visibility: visible;
+}
+
+#resetbtn.button {
+  width: 50px;
+  float: right;
+  margin-right: 5px;
+  display: none;
+  color: white;
+  font-size: 15px;
+}
+
+.purple button[id] {
+  border-color: purple;
+  color: purple;
+}
+
+.purple button[id].selected {
+  background-color: purple;
+}
+
+.blue button[id] {
+  border-color: #075db2;
+  color: #075db2;
+}
+
+.blue button[id].selected {
+  background-color: #075db2;
+}
+
+.orange button[id] {
+  border-color: #fc8056;
+  color: #fc8056;
+}
+
+.orange button[id].selected {
+  background-color: #fc8056;
+}
+
+.green button[id] {
+  border-color: #3cb371;
+  color: #3cb371;
+}
+
+.green button[id].selected {
+  background-color: #3cb371;
+}
+
+.black button[id] {
+  border-color: #000;
+  color: #000;
+}
+
+.black button[id].selected {
+  background-color: #000;
+}
+
+.yellow button[id] {
+  border-color: #dead71;
+  color: #dead71;
+  color: black;
+}
+
+.yellow button[id].selected {
+  background-color: #dead71;
+  color: black;
+}
+
+.view-header button[id] {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  min-width: 35px;
+  padding: 0 5px;
+  background-color: black;
+  border: solid 1px #e8e8e8;
+}
+
+.view-header .toggle-btn{
+  width: 80px;
+}
+
+.view-header .chart-list-controls button[id],
+.view-header .chart-list-controls-map button[id] {
+  width: 55px;
+  margin-top: 0;
+}
+
+.view-header .waureportbuttons button[id] {
+  width: 77px;
+}
+
+.view-header button[id].selected {
+  color: black;
+  background: orange;
+  border: 1px solid #e8e8e8;
+}
+
+/* chart look & feel */
+.chart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 80%;
+  width: 100%;
+}
+
+.chart-list li {
+  height: 100%;
+  width: 100%;
+}
+
+.chart-list li {
+  position: relative;
+}
+
+.chart {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.orientation-message {
+  display: none;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+
+  font-style: italic;
+  font-size: 15px;
+  position: fixed;
+}
+
+.whitebg .orientation-message {
+  color: #000000;
+}
+
+/**********************/
+/* highcharts styling */
+/**********************/
+
+/* font - sizes / colours*/
+
+/* the landscape legend in the benchmarking charts */
+svg.highcharts-root text { font-family: Arial; }
+
+.plot-line-landscape-legend {
+  font-size: 9px;
+  color: #34474F;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+
+text.highcharts-title {
+  font-size: 14px !important;
+  fill: #34474F !important;
+}
+
+text.highcharts-subtitle {
+  font-size: 10px !important;
+  fill: #999999 !important;
+}
+
+/* highcharts legend content */
+.highcharts-legend-item text {
+  font-weight: normal !important;
+  font-size: 9px !important;
+  fill: #34474F !important;
+}
+
+/* LHD names */
+.highcharts-axis-labels text {
+  font-weight: normal !important;
+  font-size: 10px !important;
+  fill: #34474F !important;
+}
+
+.highcharts-axis-labels text {
+  text-decoration: none !important;
+  fill: #666666 !important;
+}
+
+text.highcharts-data-label-color-undefined {
+  text-decoration: none !important;
+  fill: #ffffff !important;
+  font-weight: normal !important;
+  font-size: 9px !important;
+}
+
+.orange text.highcharts-data-label-color-undefined {
+  fill: red !important;
+}
+
+/* other misc styling */
+
+.plot-line-landscape-legend {
+  z-index: 1;
+  position: fixed;
+  top: 12px;
+  right: 10px;
+}
+
+.plot-line-landscape-legend-state-line, .plot-line-landscape-legend-avg-line {
+  width: 20px;
+  display: inline-block;
+  height: 6px;
+  margin-right: 5px;
+}
+
+.plot-line-landscape-legend-state-value, .plot-line-landscape-legend-avg-value {
+  display: inline-block;
+}
+
+.plot-line-landscape-legend-state-line {
+  border-bottom: solid 2px #50a0f0;
+}
+
+.plot-line-landscape-legend-avg-line {
+  border-bottom: solid 2px #fdb84b;
+}
+
+.highcharts-drillup-button {
+  display:none;
+}
+
+text.highcharts-data-label-color-undefined .highcharts-text-outline {
+  fill: none;
+  stroke: none;
+}
+
+/* mobile orientation specifics*/
+@media only screen and (orientation: portrait) {
+  .body {
+    margin-top: -175px;
+    height: 350px;
+    /*background-color: #e8e8ed;*/
+  }
+
+  .map-body {
+    top: 50% !important;
+    margin-top: 50px;
+  }
+
+  .table-body {
+    position: fixed;
+    top: 50% !important;
+    margin-top: -175px;
+    background-color: #e8e8ed;
+  }
+
+  .chart {
+    height: 100%;
+  }
+
+  .chart-map {
+    height: 420px;
+  }
+
+  .plot-line-landscape-legend {
+    display: none;
+  }
+
+  .orientation-message-greybackground {
+    background-color: #e8e8ed;
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .orientation-message {
+    /*background-color: #e8e8ed;*/
+    display: block;
+    padding-top: 10px;
+  }
+
+  text.highcharts-data-label-color-undefined {
+    font-size: 9px !important;
+  }
+
+  li#perc, li#amt {
+    background-color: #e8e8ed;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .view-header {
+    height: 60px;
+  }
+
+  .chart-list {
+    height: 100%;
+  }
+
+  .view-header .chart-list-controls {
+    /*padding-left: 166px;*/
+    padding-left: 6px;
+    top: 6px;
+    left: 60%;
+    margin-left: 80px;
+    margin-top: 0px;
+  }
+
+  .offset-body div.body {
+    padding-top: 20px;
+  }
+
+  .offset-body div.waureportbody {
+      padding-top: 10px;
+    }
+}
+
+/*for iphone 5*/
+@media screen and (device-aspect-ratio: 40/71) and (orientation: portrait){
+  .view-header .chart-list-controls {
+    top: 100%;
+    margin-top: -40px;
+  }
+
+  .view-header .waureportbuttons {
+    margin-top: -14px;
+  }
+
+  .body {
+    margin-top: -160px;
+  }
+
+  .chart {
+    /*height: 480px;*/
+  }
+
+  .chart-list {
+    height: 81%;
+  }
+
+  .orientation-message {
+    /*tempory hide for iphone 5*/
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: portrait),
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation: portrait) {
+  .view-header button[id] {
+    width: 80px;
+  }
+
+  .view-header .waureportbuttons {
+    padding-top: 1px;
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: landscape),
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation: landscape) {
+  .view-header .waureportbuttons {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+}
+@media screen and (device-aspect-ratio: 40/71) and (orientation: landscape) {
+  .view-header .chart-list-controls-map {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+  }
+
+  .offset-body div.body {
+    padding-top: 5px;
+    top: 55px;
+  }
+
+  .chart-list {
+    height: 100%;
+  }
+
+  .view-header .chart-list-controls {
+    top: 4px;
+    margin-left: 50px;
+    left: 60%;
+  }
+
+  .view-header .waureportbuttons {
+    margin-left: 60px;
+  }
+}
+
+

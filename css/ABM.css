@@ -1,0 +1,93 @@
+html{
+	overflow-x: hidden;
+}
+
+.qvplaceholder, .qvobject {
+	flex: 1 1 auto;
+	height: 300px;
+	min-width: 400px;
+	padding: 0 15px;
+	min-height: 400px;
+	margin-top: 45px;
+}
+
+.qvobject .sel-toolbar-list-wrapper td,
+.qv-chart-tooltip-inner td{
+	border-right: none;
+	border-bottom: none;
+}
+
+#popup {
+	background-color: #c3534b;
+	color: #FFFFFF;
+	position: fixed;
+	max-width: 250px;
+	padding: 10px;
+	margin: 10px;
+	bottom: 0;
+	right: 0;
+	display: none;
+	border-radius: 5px;
+	z-index: 6;
+	font-family: sans-serif;
+}
+
+.close {
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .2;
+	position: absolute;
+	right: 9px;
+	top: 7px;
+}
+
+.close:hover {
+	opacity: .5;
+}
+
+#popupText {
+	margin-right: 23px;
+}
+
+
+#benchmark-filter.reset-drill{
+	display: inline-block!important;
+	background: none;
+	padding: 0;
+	width: auto;
+}
+
+#benchmark-filter .dropdown-toggle{
+	height: 100%;
+	width: 100px;
+	box-shadow: none;
+	background-color: #2c2e37;
+	color: #fff;
+	background-image: none;
+	text-shadow: none;
+	border-radius: 7px;
+	border: none;
+	line-height: 23px;
+}
+
+#benchmark-filter>ul>li:not(.diabled)>a {
+	cursor: pointer;
+}
+#benchmark-filter>ul>li.disabled>a{
+	cursor: not-allowed;
+}
+
+.benchmark-current-year{
+	margin-right: 5px;
+}
+
+.map-reset-btn{
+	bottom: -55px;
+}

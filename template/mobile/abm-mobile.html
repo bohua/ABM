@@ -1,0 +1,126 @@
+﻿<div style="background:rgb(229, 229, 229);height: 100%">
+    <div class="view-header map-view" style="position: relative;">
+        <button id="mapnswbtn" type="button" class="button mapnswbtn selected toggle-btn" style="margin-left: 5px;">
+            <span class="fa fa-map-o"></span>
+        </button>
+        <button id="percbtn" type="button" class="button percbtn toggle-btn"  style="margin-left: -5px;">
+            <span class="fa fa-percent"></span>
+        </button>
+        <button id="hashbtn" type="button" class="button hashbtn toggle-btn" style="margin-left: -5px; margin-right: 20px;">
+            <span class="fa fa-hashtag"></span>
+        </button>
+
+        <button id="resetbtn" type="button" class="button ">
+            <span class="fa fa-arrow-left"></span>
+        </button>
+    </div>
+    <div class="view-body map-view">
+        <ul class="chart-list">
+            <li id="mapnsw">
+                <div id="first-chart" class="chart">
+                    <div class="nsw-map map">
+                        <div class="nsw-map-title">NSW <span class="nsw-map-title-period"></span></div>
+                        <div class="map-container" id="container4"></div>
+                        <div class="legend-container">
+                            <div class="legend-head">
+                                <h2>NSW <span class="nsw-map-title-period"></span></h2>
+                            </div>
+                            <div id="legend3">
+                                <div class="legend-text">
+                                    <a href="#" class="map-legend-green">
+                                        <img src="images/check.png" width="25" alt="">
+                                        <span>± 1% variation<br>from target</span>
+                                    </a>
+                                </div>
+                                <div class="legend-text">
+                                    <a href="#" class="map-legend-yellow">
+                                        <img src="images/right-down.png" width="25" alt="">
+                                        <span>±&gt; 1% -≤ 2%<br>var. from target</span>
+                                    </a>
+                                </div>
+                                <div class="legend-text">
+                                    <a href="#" class="map-legend-red">
+                                        <img src="images/crush.png" width="25" alt="">
+                                        <span>&gt; ± 2% variation<br>from target</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="mapsyd" style="margin-bottom: 30px;">
+                <div id="second-chart" class="chart">
+                    <div class="sydney-map map">
+
+                        <div class="nsw-map-title">Sydney Metropolitan <span class="sydney-map-title-period"></span>
+                        </div>
+                        <div class="sydney-legend budget-legend">
+                            <p>SHN</p>
+                            <ul class="shn">
+                                <li class="map-label" id="svhns-panel">
+                                    <div class="map-label">
+                                        <span class="map-label-name map-label-name-specialnetwork">SVHN</span>
+                                        <img class="map-label-img" id="svhns" src="images/red-circ.png" alt="SVHN">
+                                    </div>
+                                </li>
+                                <li class="map-label" id="schns-panel">
+                                    <div class="map-label">
+                                        <span class="map-label-name map-label-name-specialnetwork">SCHN</span>
+                                        <img class="map-label-img" id="schns" src="images/red-circ.png" alt="SCHN"/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="map-container" id="container5"></div>
+                        <div class="legend-container">
+                            <div class="legend-head">
+                                <h2>Sydney Metropolitan <span class="sydney-map-title-period"></span></h2>
+                            </div>
+                            <div id="legend2">
+                                <div class="legend-text">
+                                    <a href="#" class="map-legend-green">
+                                        <img src="images/check.png" width="25" alt="">
+                                        <span>± 1% variation<br>from target</span>
+                                    </a>
+                                </div>
+                                <div class="legend-text">
+                                    <a href="#" class="map-legend-yellow">
+                                        <img src="images/right-down.png" width="25" alt="">
+                                        <span>±&gt; 1% -≤ 2%<br>var. from target</span>
+                                    </a>
+                                </div>
+                                <div class="legend-text">
+                                    <a href="#" class="map-legend-red">
+                                        <img src="images/crush.png" width="25" alt="">
+                                        <span>&gt; ± 2% variation<br>from target</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="perc" class="long-title" style="display:none;">
+                <div id="third-chart" class="chart qvobject qs-mobile-table">
+                    <div class="loading" style="text-align: center">
+                        <i id='processing-chart-1' class="fa fa-spinner fa-spin fa-3x fa-fw"
+                           style="font-size: 50px;color: wheat;"></i>
+                    </div>
+                </div>
+            </li>
+            <li id="hash" class="long-title" style="display:none;">
+                <div id="forth-chart" class="chart qvobject qs-mobile-table">
+                    <div class="loading" style="text-align: center">
+                        <i id='processing-chart-2' class="fa fa-spinner fa-spin fa-3x fa-fw"
+                           style="font-size: 50px;color: wheat;"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="orientation-message" style="height:60px; background: black; z-index: 4;">
+            <span class="fa fa-info-circle"></span> view in landscape for best performance
+        </div>
+    </div>
+</div>
