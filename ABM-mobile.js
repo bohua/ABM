@@ -1,4 +1,4 @@
-var appId = "Portal on the Go WIP Limit.qvf"; //In server version, get the hashed app id from QMC
+var appId = "f9dbb934-3045-4c6d-8155-54e932caa2b6"; //In server version, get the hashed app id from QMC
 var tiles = {};
 var prefix = window.location.pathname.substr(0, window.location.pathname.toLowerCase().lastIndexOf("/extensions") + 1);
 var config = {

@@ -5,7 +5,7 @@
 /*
  *    Fill in host and port for Qlik engine
  */
-var appId = "Portal on the Go WIP Limit.qvf"; //In server version, get the hashed app id from QMC
+var appId = "f9dbb934-3045-4c6d-8155-54e932caa2b6"; //In server version, get the hashed app id from QMC
 var visCache = {};
 var prefix = window.location.pathname.substr(0, window.location.pathname.toLowerCase().lastIndexOf("/extensions") + 1);
 var config = {
@@ -324,8 +324,8 @@ require([
                             .replaceWith("<p class='ben-subtitle'>" + tile.model.layout.title + "</p>");
 
                         tile.show("chart15-0");
-                        $("#chart15-1").empty();
-                        $("#chart15-2").empty();
+                        // $("#chart15-1").empty();
+                        // $("#chart15-2").empty();
                     }
                     if (hoverChartIndex === 1) {
                         tile = visCache["TileBenchmarkEnct"];
@@ -338,8 +338,8 @@ require([
 
                                 vis.setOptions({showTitles:false});
                                 vis.show("chart15-1");
-                                $("#chart15-0").empty();
-                                $("#chart15-2").empty();
+                                // $("#chart15-0").empty();
+                                // $("#chart15-2").empty();
                             });
                             return;
                         }
@@ -348,8 +348,8 @@ require([
                             .replaceWith("<p class='ben-subtitle'>" + tile.model.layout.title + "</p>");
 
                         tile.show("chart15-1");
-                        $("#chart15-0").empty();
-                        $("#chart15-2").empty();
+                        // $("#chart15-0").empty();
+                        // $("#chart15-2").empty();
 
                     }
                     if (hoverChartIndex === 2) {
@@ -364,8 +364,8 @@ require([
 
                                 vis.setOptions({showTitles:false});
                                 vis.show("chart15-2");
-                                $("#chart15-0").empty();
-                                $("#chart15-1").empty();
+                                // $("#chart15-0").empty();
+                                // $("#chart15-1").empty();
                             });
                             return;
                         }
@@ -374,8 +374,8 @@ require([
                             .replaceWith("<p class='ben-subtitle'>" + tile.model.layout.title + "</p>");
 
                         tile.show("chart15-2");
-                        $("#chart15-0").empty();
-                        $("#chart15-1").empty();
+                        // $("#chart15-0").empty();
+                        // $("#chart15-1").empty();
                     }
                 }
                 if (id === "chart-14") {
@@ -492,8 +492,8 @@ require([
 
         benYear.getData();
 
-        reloadSlider();
+        //reloadSlider();
         //$(".cost-block .bx-loading").remove();
-        setTimeout(function(){$(window).trigger('resize')});
+        //setTimeout(function(){$(window).trigger('resize')});
     }
 });
