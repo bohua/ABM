@@ -443,6 +443,24 @@ require([
         var dfd = new $.Deferred();
 
         app.visualization.get(chartObjMap[tileName]).then(function (vis) {
+            var val = vis.model.layout.qHyperCube.qDataPages[0].qMatrix[0][0].qNum;
+
+            if(tileName == 'BudTile'){
+                if(val <=0){
+                    container.find('.qs-arrow').addClass('fa-arrow-circle-up');
+                }else{
+                    container.find('.qs-arrow').addClass('fa-arrow-circle-down');
+                }
+            }
+
+            if(tileName == 'ApTile'){
+                if(val <=0.01 && val >=-0.01){
+                    container.find('.qs-arrow').addClass('fa-arrow-circle-up');
+                }else{
+                    container.find('.qs-arrow').addClass('fa-arrow-circle-down');
+                }
+            }
+
             container.find('.qs-subtitle').text(vis.model.layout.title);
             container.find('.qs-year').text(vis.model.layout.subtitle);
             container.find('.qs-value').text(vis.model.layout.qHyperCube.qDataPages[0].qMatrix[0][0].qText);
