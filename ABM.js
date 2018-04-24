@@ -5,7 +5,7 @@
 /*
  *    Fill in host and port for Qlik engine
  */
-var appId = "f9dbb934-3045-4c6d-8155-54e932caa2b6"; //In server version, get the hashed app id from QMC
+var appId = "224431b8-d826-459d-83ed-bfb1aba36579"; //In server version, get the hashed app id from QMC
 var visCache = {};
 var prefix = window.location.pathname.substr(0, window.location.pathname.toLowerCase().lastIndexOf("/extensions") + 1);
 var config = {
@@ -43,6 +43,11 @@ require([
         userAccess = getUserAccess(),
         selState = app.selectionState();
 
+
+    //Version info
+    app.visualization.get(chartObjMap["VersionInfo"]).then(function (vis) {
+        $("#last-updated").text(vis.model.layout.qHyperCube.qDataPages[0].qMatrix[0][0].qText);
+    });
 
     //Benchmarking Filter
     var benYear = app.field("Benchmark Year").getData();
@@ -487,7 +492,12 @@ require([
         $.when.apply($, queue).then(function () {
             reloadSlider();
             $(".cost-block .bx-loading").remove();
-            setTimeout(function(){$(window).trigger('resize')});
+            setTimeout(
+                function(){
+                    width += 1;
+                    $(window).trigger('resize');
+                    reloadSlider();
+                }, 500);
         });
     }
 

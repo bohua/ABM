@@ -1,5 +1,8 @@
 define([], function () {
     return {
+        //Version Info
+        "VersionInfo": "pkAmS",
+
         //Benchmarking
         "BenSheet": "c2fa1879-0eca-4a6b-b103-4af3b9aedc19",
         "BenTile": "jNmujTj",
