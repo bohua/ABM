@@ -292,13 +292,13 @@
       position: relative;
       z-index: 2;
       width: 390%;
-      bottom:24px
+      /*bottom:24px*/
     }
 
   div#legend3 {
     display: -webkit-inline-box;
     position: relative;
-    bottom: 36px;
+    /*bottom: 36px;*/
     z-index: 2;
     width: 390%;
   }
@@ -306,7 +306,7 @@
   .maptext {
     width: 400%;
     font-size: 10px;
-    margin-top: -20px;
+    margin-top: 15px;
   }
   /*div#legend2, div#legend3 {
     display: -webkit-inline-box;

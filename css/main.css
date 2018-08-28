@@ -1378,7 +1378,7 @@ ul.table-head>li.highlighted-text>span:first-child { font-weight: 800; color: rg
 
 @media(min-width:1200px) {
     .chart-container {
-        height: 400px
+        min-height: 400px
     }
     .wau-refresh {
         margin-left: 12%;

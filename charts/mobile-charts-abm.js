@@ -1,5 +1,5 @@
 ﻿define([
-    "/extensions/ABM/js/chart-helper.js"
+    "js/chart-helper.js"
 ], function (helper) {
     var mapformatter;
     var resizeChart;

@@ -694,3 +694,8 @@ table#tiles-container .item {
     height: 340px;
   }
 }*/
+
+
+.view-body .sel-toolbar-list{
+    float: none;
+}

@@ -268,9 +268,9 @@ $(document).ready(function () {
     new WOW().init();
 
 
-    $('#myCollapsible').collapse({
-        toggle: false
-    });
+    // $('#myCollapsible').collapse({
+    //     toggle: false
+    // });
 
     // ==================color block anchor link ==================
     $('.cost-block-wrap ').on('click', '.item', function () {
@@ -649,15 +649,15 @@ $(window).resize(function () {
 
 });
 
-$(window).load(function () {
-    equalheight('.cost-block .single-cost');
-})
-
-$(window).resize(function () {
-    // ==================Cost-Block Equal Height ===========================
-    equalheight('.cost-block .single-cost');
-    // $(window).resizeBy(100, 100);
-});
+// $(window).on('load', function () {
+//     equalheight('.cost-block .single-cost');
+// })
+//
+// $(window).resize(function () {
+//     // ==================Cost-Block Equal Height ===========================
+//     equalheight('.cost-block .single-cost');
+//     // $(window).resizeBy(100, 100);
+// });
 
 // end of window resize
 

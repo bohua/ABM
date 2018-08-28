@@ -1,4 +1,4 @@
-﻿define([
+define([
     "/extensions/ABM/js/chart-helper.js"
 ], function (helper) {
     var mapformatter;
