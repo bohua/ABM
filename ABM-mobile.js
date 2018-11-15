@@ -34,6 +34,7 @@ require([
 
     //open apps
     var app = qlik.openApp(appId, config);
+
     var selState = app.selectionState();
 
     //Trick to align with old main-mobile=>OpenChart function

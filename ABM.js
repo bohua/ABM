@@ -26,7 +26,13 @@ require([
     "../extensions/ABM/charts/activity-nsw-map",
     "../extensions/ABM/charts/budget-sydney-map",
     "../extensions/ABM/charts/budget-nsw-map"
-], function (qlik, chartObjMap, activitySydneyMap, activityNswMap, budgetSydneyMap, budgetNswMap) {
+], function (qlik,
+             chartObjMap,
+             activitySydneyMap,
+             activityNswMap,
+             budgetSydneyMap,
+             budgetNswMap
+) {
     function popError(error) {
         $('#popupText').text(error.message + "<br>");
         $('#popup').fadeIn(1000);
