@@ -5,7 +5,7 @@
 /*
  *    Fill in host and port for Qlik engine
  */
-var appId = "224431b8-d826-459d-83ed-bfb1aba36579"; //In server version, get the hashed app id from QMC
+var appId = "Portal on the Go WIP Limit"; //In server version, get the hashed app id from QMC
 var visCache = {};
 var prefix = window.location.pathname.substr(0, window.location.pathname.toLowerCase().lastIndexOf("/extensions") + 1);
 var config = {
@@ -26,7 +26,13 @@ require([
     "../extensions/ABM/charts/activity-nsw-map",
     "../extensions/ABM/charts/budget-sydney-map",
     "../extensions/ABM/charts/budget-nsw-map"
-], function (qlik, chartObjMap, activitySydneyMap, activityNswMap, budgetSydneyMap, budgetNswMap) {
+], function (qlik,
+             chartObjMap,
+             activitySydneyMap,
+             activityNswMap,
+             budgetSydneyMap,
+             budgetNswMap
+) {
     function popError(error) {
         $('#popupText').text(error.message + "<br>");
         $('#popup').fadeIn(1000);
